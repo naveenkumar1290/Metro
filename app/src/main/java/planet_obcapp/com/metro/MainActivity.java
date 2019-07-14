@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import planet_obcapp.com.metro.data.Line;
+//import planet_obcapp.com.metro.data.Line;
 import planet_obcapp.com.metro.graph.Node;
 import planet_obcapp.com.metro.graph2.Graph;
 import planet_obcapp.com.metro.metro.Green;
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         g.add(new Node(5, 4));
         g.add(new Node(5, 6));
 /****************************************************************/
-        ArrayList<Line> lines = new Green().getBinndingdata();
+        ArrayList<Line> lines = Green.getBinndingdata();
         ArrayAdapter<Node> dataAdapter = new ArrayAdapter<Node>(this,
                 android.R.layout.simple_spinner_item, g);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

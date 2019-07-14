@@ -79,7 +79,7 @@ public class FullscreenActivity extends AppCompatActivity implements View.OnTouc
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.delhi_metro_2, opts);
         mContentView.setImageBitmap (bitmap);
 
-
+//http://www.delhimetrorail.com/images/bilingual-21062019.jpg
 
         mContentView.setOnTouchListener(FullscreenActivity.this);
 
