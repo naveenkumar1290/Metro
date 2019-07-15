@@ -11,7 +11,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import planet_obcapp.com.metro.data.Line;
 import planet_obcapp.com.metro.graph.Node;
 import planet_obcapp.com.metro.graph2.Graph;
 import planet_obcapp.com.metro.metro.Green;
