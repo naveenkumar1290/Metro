@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import planet_obcapp.com.metro.data.Line;
 
 public class Yellow {
-    ArrayList<Line> YellowLine=new ArrayList<>();
+   public static ArrayList<Line> YellowLine=new ArrayList<>();
 
     public Yellow() {
 
@@ -53,4 +53,9 @@ public class Yellow {
 
 
     }
+
+    public static ArrayList<Line>  getYellowLineData(){
+        return YellowLine;
+    }
+
 }

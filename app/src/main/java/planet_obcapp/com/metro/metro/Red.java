@@ -6,7 +6,7 @@ import planet_obcapp.com.metro.data.Line;
 
 public class Red {
 
-    ArrayList<Line> RedLine=new ArrayList<>();
+  public static   ArrayList<Line> RedLine=new ArrayList<>();
     
     public Red() {
 
@@ -53,4 +53,10 @@ public class Red {
 
 
     }
+
+    public static ArrayList<Line>  getRedLineData(){
+        return RedLine;
+    }
+
+
 }

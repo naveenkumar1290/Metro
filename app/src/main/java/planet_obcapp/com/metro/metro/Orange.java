@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import planet_obcapp.com.metro.data.Line;
 
 public class Orange {
-    ArrayList<Line> OrangeLine=new ArrayList<>();
+   public static ArrayList<Line> OrangeLine=new ArrayList<>();
     public Orange() {
         OrangeLine.add(new Line("105","New Delhi","","","","",""));
         OrangeLine.add(new Line("106","Shivaji Stadium","","","","",""));
@@ -48,5 +48,9 @@ public class Orange {
         OrangeLine.add(new Line("","","","","","",""));
         OrangeLine.add(new Line("","","","","","",""));
 
+    }
+
+    public static ArrayList<Line>  getOrangeLineData(){
+        return OrangeLine;
     }
 }

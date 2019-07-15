@@ -13,16 +13,16 @@ import java.util.List;
 
 //import planet_obcapp.com.metro.data.Line;
 import planet_obcapp.com.metro.data.Line;
+import planet_obcapp.com.metro.data.Utility;
 import planet_obcapp.com.metro.graph.Node;
 import planet_obcapp.com.metro.graph2.Graph;
-import planet_obcapp.com.metro.metro.Green;
 
 public class MainActivity extends AppCompatActivity {
 
     Spinner from, to;
     Button btn_find;
     TextView txt_route;
-    List<Node> g = new ArrayList<>();
+    List<Node> list_Nodes = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,18 +56,18 @@ public class MainActivity extends AppCompatActivity {
 
 
     void BindData() {
-        g = new ArrayList<>();
-        g.add(new Node(0, 1));
-        g.add(new Node(1, 3));
-        g.add(new Node(1, 6));
-        g.add(new Node(3, 5));
-        g.add(new Node(2, 3));
-        g.add(new Node(5, 4));
-        g.add(new Node(5, 6));
+        list_Nodes = new ArrayList<>();
+        list_Nodes.add(new Node(0, 1));
+        list_Nodes.add(new Node(1, 3));
+        list_Nodes.add(new Node(1, 6));
+        list_Nodes.add(new Node(3, 5));
+        list_Nodes.add(new Node(2, 3));
+        list_Nodes.add(new Node(5, 4));
+        list_Nodes.add(new Node(5, 6));
 /****************************************************************/
-        ArrayList<Line> lines = Green.getBinndingdata();
-        ArrayAdapter<Node> dataAdapter = new ArrayAdapter<Node>(this,
-                android.R.layout.simple_spinner_item, g);
+        ArrayList<Line> lines = Utility.getAllLinesData();
+        ArrayAdapter<Line> dataAdapter = new ArrayAdapter<Line>(MainActivity.this,
+                android.R.layout.simple_spinner_item, lines);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         from.setAdapter(dataAdapter);
         to.setAdapter(dataAdapter);
@@ -76,13 +76,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         List<Node> g1 = new ArrayList<>();
-        for (Node node : g) {
+        for (Node node : list_Nodes) {
             g1.add(new Node(node.getDestination(), node.getSource()));
         }
 
 
         List<Node> g2 = new ArrayList<>();
-        g2.addAll(g);
+        g2.addAll(list_Nodes);
         g2.addAll(g1);
         Graph.addNode(g2);
 

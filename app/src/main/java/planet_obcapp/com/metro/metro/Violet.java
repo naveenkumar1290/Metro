@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import planet_obcapp.com.metro.data.Line;
 
 public class Violet {
-    ArrayList<Line> VioletLine=new ArrayList<>();
+  public static   ArrayList<Line> VioletLine=new ArrayList<>();
 
     public Violet() {
 
@@ -53,4 +53,9 @@ public class Violet {
 
 
     }
+
+    public static ArrayList<Line>  getVioletLineData(){
+        return VioletLine;
+    }
+
 }

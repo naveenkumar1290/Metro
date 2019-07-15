@@ -6,7 +6,7 @@ import planet_obcapp.com.metro.data.Line;
 
 public class Pink {
 
-    ArrayList<Line> PinkLine=new ArrayList<>();
+  public static   ArrayList<Line> PinkLine=new ArrayList<>();
     public Pink() {
         PinkLine.add(new Line("111","Majlis Park","","","","",""));
         PinkLine.add(new Line("112 ","Azadpur","","","","",""));
@@ -30,8 +30,12 @@ public class Pink {
         PinkLine.add(new Line("130","Ashram","","","","",""));
         PinkLine.add(new Line("131","Sarai Kale Khan-Nizamuddin","","","","",""));
         PinkLine.add(new Line("132","Mayar Vihar Phase-1","","","","",""));
+
+        // connection break
         PinkLine.add(new Line("133","Myar Vihar Pocket 1","","","","",""));
         PinkLine.add(new Line("134","Trilokpuri-Sanjay Lake","","","","",""));
+       // break
+
         PinkLine.add(new Line("135","East Vinod Nagar-Mayur Vihar-II","","","","",""));   PinkLine.add(new Line("3","","","","","",""));
         PinkLine.add(new Line("136","Mandawali-West Vinod Nagar","","","","",""));
         PinkLine.add(new Line("137","I.P Extension","","","","",""));
@@ -46,75 +50,13 @@ public class Pink {
         PinkLine.add(new Line("146","Gokulpuri","","","","",""));
         PinkLine.add(new Line("147","Johri Enclave","","","","",""));
         PinkLine.add(new Line("148","Shiv Vihar","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));   PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));   PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));   PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));   PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));   PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
-        PinkLine.add(new Line("3","","","","","",""));
 
 
 
     }
+
+    public static ArrayList<Line>  getPinkLineData(){
+        return PinkLine;
+    }
+
 }
