@@ -1,4 +1,4 @@
-package planet_obcapp.com.metro;
+package planet_obcapp.com.metro.data;
 
 public class Line {
 
