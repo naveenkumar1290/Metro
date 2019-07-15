@@ -12,7 +12,7 @@ public class DashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-
+//kkk
         LinearLayout ll_ViewMap=findViewById(R.id.ViewMap);
         LinearLayout ll_ViewRoute=findViewById(R.id.ViewRoute);
         LinearLayout ll_NearByMetro=findViewById(R.id.NearByMetro);
